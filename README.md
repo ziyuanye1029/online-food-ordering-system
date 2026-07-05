@@ -64,6 +64,12 @@ Page<Employee> pageQuery(EmployeePageQueryDTO employeePageQueryDTO);
 
 ---
 
+## 待优化点
+
+- 员工分页查询直接返回 `Employee` 实体，`password` 字段会暴露给前端，应新建 `EmployeeVO` 去掉密码字段
+
+---
+
 ## 为什么分页查询用 XML 而登录用注解
 
 | 场景 | 方式 | 原因 |
